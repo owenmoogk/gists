@@ -1,0 +1,38 @@
+<entries>
+    <resource>
+        <title>Test2</title>
+        <description>Thanks JANIK!!!!</description>
+        <category>requis</category>
+        <id>1</id>
+    </resource>
+    <resource>
+        <title>Test1</title>
+        <description>Janik is goated</description>
+        <category>is</category>
+        <id>2</id>
+    </resource>
+    <resource>
+        <title>Test4</title>
+        <description>github.com/JanikThePanic</description>
+        <category>quite</category>
+        <id>3</id>
+    </resource>
+    <resource>
+        <title>Test3</title>
+        <description>hes the man</description>
+        <category>quite</category>
+        <id>4</id>
+    </resource>
+    <resource>
+        <title>Test6</title>
+        <description>neiner neiner</description>
+        <category>quite</category>
+        <id>5</id>
+    </resource>
+    <resource>
+        <title>Test5</title>
+        <description>lmao</description>
+        <category>gamer</category>
+        <id>6</id>
+    </resource>
+</entries>
