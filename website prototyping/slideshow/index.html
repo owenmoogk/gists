@@ -6,27 +6,31 @@
         <script src="js-for-all.js"></script>
         <link rel="stylesheet" href="css.css">
     </head>
-    <body>
+    <body onload="showSlides(1)">
         <!-- Slideshow container -->
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
             <img src="img1.jpg" style="width:100%; height: 400px;">
             <div class="text">doggoooo</div>
             </div>
         
             <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img2.jpg" style="width:100%; height: 400px;">
-            <div class="text">beer belly</div>
+                <img src="img2.jpg" style="width:100%; height: 400px;">
+                <div class="text">beer belly</div>
             </div>
         
             <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img3.jpg" style="width:100%; height: 400px;">
-            <div class="text">blah</div>
+                <img src="img3.jpg" style="width:100%; height: 400px;">
+                <div class="text">blah</div>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="https://www.firstinspires.org">
+                    <img src="img3.jpg" style="width:100%; height: 400px;">
+                </a>
+                <div class="text">ello</div>
             </div>
         
             <!-- Next and previous buttons -->
@@ -37,9 +41,10 @@
         
         <!-- The dots/circles -->
         <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="showSlides(1)"></span>
+            <span class="dot" onclick="showSlides(2)"></span>
+            <span class="dot" onclick="showSlides(3)"></span>
+            <span class="dot" onclick="showSlides(4)"></span>
         </div>
     </body>
 </html>
