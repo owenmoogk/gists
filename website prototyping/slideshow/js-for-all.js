@@ -23,4 +23,27 @@ function showSlides(n) {
 	dots[slideIndex-1].className += " active";
 }
 
+function showText(){
+	$('.text').css("display","block")
+}
+function hideText(){
+	$('.text').css("display","none")
+}
+
+function giveImgTags(){
+	var imgs = document.getElementsByTagName('img')
+	numOfImgs = imgs.length
+	for (var i = 0; i < numOfImgs; i++){
+		var img = imgs[i]
+		img.setAttribute("onmouseover", "showText()")
+		img.setAttribute("onmouseout", "hideText()")
+		img.setAttribute("style", "width:100%; height: 400px;")
+	}
+}
+
+function onLoad(){
+	showSlides(1)
+	giveImgTags()
+}
+
 var slideIndex = 0;
