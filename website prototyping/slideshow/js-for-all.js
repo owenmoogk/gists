@@ -7,7 +7,7 @@ function plusSlides(n) {
 function showSlides(n) {
 	slideIndex = n
 	var i;
-	var slides = document.getElementsByClassName("mySlides");
+	var slides = document.getElementsByClassName("slide");
 	var dots = document.getElementsByClassName("dot");
 
 	if (slideIndex > slides.length) {slideIndex = 1}
@@ -23,21 +23,12 @@ function showSlides(n) {
 	dots[slideIndex-1].className += " active";
 }
 
-function showText(){
-	$('.text').css("display","block")
-}
-function hideText(){
-	$('.text').css("display","none")
-}
-
 function giveImgTags(){
 	var imgs = document.getElementsByTagName('img')
 	numOfImgs = imgs.length
 	for (var i = 0; i < numOfImgs; i++){
 		var img = imgs[i]
-		img.setAttribute("onmouseover", "showText()")
-		img.setAttribute("onmouseout", "hideText()")
-		img.setAttribute("style", "width:100%; height: 400px;")
+		img.setAttribute("style", "width:100%; height: 600px;")
 	}
 }
 
