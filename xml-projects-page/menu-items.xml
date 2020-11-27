@@ -1,0 +1,26 @@
+<menu>
+    <item>
+        <title>Home</title>
+        <link>"/index.html"</link>
+    </item>
+    <item>
+        <title>Projects</title>
+        <link>"/html/projects.html"</link>
+    </item>
+    <item>
+        <title>Work</title>
+        <link>"/html/work.html"</link>
+    </item>
+    <item>
+        <title>Blog</title>
+        <link>"/html/blog.html"</link>
+    </item>
+    <item>
+        <title>Contact</title>
+        <link>"/html/contact.html"</link>
+    </item>
+    <item>
+        <title>Resume</title>
+        <link>"/assets/resume.pdf" target = "_blank"</link> <!--opens in new tab-->
+    </item>
+</menu>
