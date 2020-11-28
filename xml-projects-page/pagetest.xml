@@ -1,22 +1,31 @@
 <page>
     <page-head> 
-        <page-title>test project page</page-title>
-        <date>october 12</date>
+        <page-title>2702 Rebels 2019 Robot</page-title>
+        <date>May 15 2019</date>
     </page-head>
     <block>
         <title>Overview</title>
-        <text>bofguishndgoisfb~~gosdigbnsigubisog~~basdgubau gfubsd~~igbui udgb~~sifdg bsa igusbfdguis gsiugbsaig s</text>
-        <image>'/picture.png'</image>
+        <text>I am a part of the <a href="https://2702rebels.com" class="blinks" target="_blank">2702 Rebels</a> FIRST Robotics team,
+            and we just finished our 2019 robot, named Roadrunner! It was designed to compete in the <a href="https://www.youtube.com/watch?v=Mew6G_og-PI" class="blinks" target="_blank">2019 Destination Deep Space</a>
+            FIRST robotics competition. This page takes an in depth look into our robot, with some of the specs and competition numbers.
+            Overall, I am super proud of this robot, as we qualified for the Detroit World Championships!
+            Check it out in action in our <a href="https://www.youtube.com/watch?v=Qg6R_3o6a9M" class="blinks" target="_blank">reveal video</a> (which is also linked at the bottom).</text>
+        <image>/picture.png</image>
     </block>
     <block>
-        <title>Overview</title>
-        <text>bofguishndgoisfbgosd~~igbnsigubisogbas~~dgubau gfubsdigbui ~~udgbsif~~dg bsa igusbfdguis gsiugbsaig s</text>
+        <title>Competition</title>
+        <text>During the 2019 season, our robot competed in 6 competitions, winning 3 awards. Our robot was 46-35-0 (win-loss-tie), and qualified to the Detroit World Championships,
+            in which we were semi-finalists.</text>
         <image>/picture.png</image>
     </block>
     <links>
         <link>
             <link-text>whitehouse</link-text>
             <src>https://whitehouse.gov</src>
+        </link>
+        <link>
+            <link-text>2702 rebels</link-text>
+            <src>https://2702rebels.com</src>
         </link>
     </links>
 </page>
