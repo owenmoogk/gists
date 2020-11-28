@@ -1,4 +1,8 @@
 <page>
+    <page-head> 
+        <page-title>test project page</page-title>
+        <date>october 12</date>
+    </page-head>
     <block>
         <title>Overview</title>
         <text>bofguishndgoisfb~~gosdigbnsigubisog~~basdgubau gfubsd~~igbui udgb~~sifdg bsa igusbfdguis gsiugbsaig s</text>
@@ -7,6 +11,12 @@
     <block>
         <title>Overview</title>
         <text>bofguishndgoisfbgosd~~igbnsigubisogbas~~dgubau gfubsdigbui ~~udgbsif~~dg bsa igusbfdguis gsiugbsaig s</text>
-        <image>'/picture.png'</image>
+        <image>/picture.png</image>
     </block>
+    <links>
+        <link>
+            <link-text>whitehouse</link-text>
+            <src>https://whitehouse.gov</src>
+        </link>
+    </links>
 </page>
