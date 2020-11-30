@@ -1,0 +1,82 @@
+<projects>
+    <entry>
+        <title>Hydraulic Arm</title>
+        <link>"/html/projects/hydraulic-arm/hydraulic-arm.html"</link>
+        <image>"/img/projects/hydraulic-arm.png"</image>
+        <date>November 7, 2020</date>
+        <type>Mechanical</type>
+        <description>A hydraulic arm I made for a school project. It turned out pretty well.</description>
+    </entry>
+    <entry>
+        <title>Space Invaders</title>
+        <link>"/html/projects/space-invaders/space-invaders.html"</link>
+        <image>"/img/projects/space-invaders.png"</image>
+        <date>November 6, 2020</date>
+        <type>Coding</type>
+        <description>A Space Invaders style game I made using python and pygame. It's pretty basic, but I learned a lot through the process.</description>
+    </entry>
+    <entry>
+        <title>The Compiler</title>
+        <link>"/html/projects/the-compiler/the-compiler.html"</link>
+        <image>"/img/projects/classified.png"</image>
+        <date>October 19, 2020</date>
+        <type>Webdev</type>
+        <description>My page for files and websites I find useful (and you might too!). Coming Soon.</description>
+    </entry>
+    <entry>
+        <title>Website Development</title>
+        <link>"/html/projects/website-development/website-development.html"</link>
+        <image>"/img/projects/website-development.png"</image>
+        <date>April 21, 2020</date>
+        <type>Webdev</type>
+        <description>This website's project page!</description>
+    </entry>
+    <entry>
+        <title>Renders/Graphic Design</title>
+        <link>"/html/projects/renders/renders.html"</link>
+        <image>"/img/projects/renders.png"</image>
+        <date>April 22, 2020</date>
+        <type>CAD</type>
+        <description>I have been working on designing some everyday items for rendering, to develop skills and to use in graphic design.</description>
+    </entry>
+    <entry>
+        <title>Minecraft Modifications</title>
+        <link>"/html/projects/minecraft-mods/minecraft-mods.html"</link>
+        <image>"/img/projects/minecraft-mods.png"</image>
+        <date>April 20, 2020</date>
+        <type>Coding</type>
+        <description>I have wrote small amounts of code and made game specific files to modify the popular voxel-based game, Minecraft.</description>
+    </entry>
+    <entry>
+        <title>Double Chomp (Robot)</title>
+        <link>"/html/projects/double-chomp/double-chomp.html"</link>
+        <image>"/img/projects/classified.png"</image>
+        <date>TBD</date>
+        <type>CAD</type>
+        <description>A robotics CAD challenge, in which I designed a functional robot for a competition.</description>
+    </entry>
+    <entry>
+        <title>2702 Rebels 2020 Robot</title>
+        <link>"/html/projects/2702-2020/2702-2020.html"</link>
+        <image>"/img/projects/2702-2020.png"</image>
+        <date>March 24, 2020</date>
+        <type>Mechanical</type>
+        <description>I was a part of designing and building the 2702 Rebels 2020 FRC robot, designed to compete in the Infinite Recharge robotics competition.</description>
+    </entry>
+    <entry>
+        <title>Engine Assembly</title>
+        <link>"/html/projects/engine/engine.html"</link>
+        <image>"/img/projects/engine.png"</image>
+        <date>March 16, 2020</date>
+        <type>Mechanical</type>
+        <description>I recently built a small engine from basic components, used for appliances like lawnmowers or snowblowers.</description>
+    </entry>
+    <entry>
+        <title>2702 Rebels 2019 Robot</title>
+        <link>"/html/projects/2702-2019/2702-2019.html"</link>
+        <image>"/img/projects/2702-2019.png"</image>
+        <date>May 5, 2019</date>
+        <type>Mechanical</type>
+        <description>I was a part of designing and building the 2702 Rebels 2019 FRC robot, designed to compete in the Destination Deep Space robotics competition.</description>
+    </entry>
+</projects>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>hm</title>
+
+  <!-- IBM Plex font -->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css.css">
+  <script src="js.js"></script>
+
+</head>
+
+<body onload="loadXML()">
+
+  <!-- include navbar -->
+  <include file="/assets/nav.html"></include>
+
+  <!-- page content begins here -->
+  <div class="page">
+    <h1 class="page-title">Thoughts</h1>
+
+    <br>
+
+    <div class="sorting">
+      <!-- buttons for the catagorys -->
+      <div class="buttons">
+        <span class="sort_all btn active"><p>All</p></span>
+		<span class="sort_cad btn"><p>CAD</p></span>
+		<span class="sort_coding btn"><p>Coding</p></span>
+		<span class="sort_mechanical btn"><p>Mechanical</p></span>
+		<span class="sort_webdev btn"><p>Web-Dev</p></span>
+	</div>
+
+		<!-- the dropdown for sorting -->
+		<div class="sort">
+			<label>Sort by: &nbsp</label>
+			<select id="mySort" onchange="sortProjects()">
+				<option value="date">Newest</option>
+				<option value="alpha-desc">A-Z</option>
+				<option value="alpha-asc">Z-A</option>
+			</select>
+		</div>
+    </div>
+
+    <br>
+
+    <!-- will drop xml thoughts into here -->
+    <div id="projectsGoHere">
+
+    </div>
+  </div>
+
+  <!-- main js -->
+  <script src="/js/main.js"></script>
+  <!-- thoughts js file -->
+  <script src="/js/thoughts.js"></script>
+
+</body>
+
+</html>

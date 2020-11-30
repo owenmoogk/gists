@@ -1,0 +1,267 @@
+.page {
+    max-width: 100%;
+}
+p{
+    line-height: normal !important;
+    width: auto !important;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+/* the entry has the image and text side */
+#projectsGoHere {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: left;
+    clear: both;
+}
+.entry {
+    display: flex;
+    flex: 1 0 42%;
+    max-width: 47%;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid lightgray;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    height: 150px;
+}
+.entry div {
+    margin-bottom: 0.3rem;
+}
+.entry p {
+    max-width: 95%;
+}
+
+/* image side */
+.image_div {
+    flex: 0.2;
+    margin: 0 1rem 0.5rem 0;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+.image {
+    border-radius: 6%;
+    height: 100%;
+}
+
+/* text side */
+.text_div {
+    flex: 0.9;
+}
+.title {
+    font-size: 200%;
+    font-weight: bold;
+}
+.type_date {
+    font-weight: bold;
+    display: flex;
+    font-size: 1rem;
+}
+.date {
+    color: rgb(0, 150, 255);
+}
+.description {
+    overflow: hidden;
+    max-height: 4em;
+}
+
+@media screen and (max-width: 1400px) {
+    .image_div {
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .image_div {
+        flex: 0.3;
+    }
+    .entry {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+    #projectsGoHere {
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+}
+
+
+/* mobile jazz */
+@media screen and (max-width: 600px) {
+    .entry {
+        max-width: 100%;
+        margin-right: 0px;
+    }
+    .image_div {
+        flex: 0.4;
+    }
+    .entry p {
+        font-size: 0.8em;
+    }
+    .title {
+        font-size: 1.2em !important;
+    }
+    #ThoughtsGoHere {
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+    }
+    .entry div {
+        margin-bottom: 0.2rem;
+    }
+}
+
+/* here we got the sorting css */
+
+.sorting {
+    display: block;
+    min-height: 2em;
+    min-width: 100%;
+}
+
+:root {
+    --color_all: #1e272e;
+    --color_cad: #0abde3;
+    --color_coding: #a6c44e;
+    --color_mechanical: #ff9f43;
+    --color_webdev: #d65858;
+    --color_music: #d467c6;
+    --white: #ffffff;
+}
+
+.sort_icons {
+    width: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn p { 
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.btn {
+    float: left;
+    padding: 4px 6px 4px 6px;
+    margin: 0 5px 5px 0;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sort_all {
+    border: 2px solid var(--color_all);
+    color: var(--color_all);
+    background-color: var(--white);
+    fill: var(--color_all);
+}
+.sort_all.active, .sort_all:hover {
+    color: var(--white);
+    background-color: var(--color_all);
+    fill: var(--white);
+}
+.sort_cad {
+    border: 2px solid var(--color_cad);
+    color: var(--color_cad);
+    background-color: var(--white);
+    fill: var(--color_cad);
+}
+.sort_cad.active, .sort_cad:hover{
+    color: var(--white);
+    background-color: var(--color_cad);
+    fill: var(--white);
+}
+.sort_coding {
+    border: 2px solid var(--color_coding);
+    color: var(--color_coding);
+    background-color: var(--white);
+    fill: var(--color_coding);
+}
+.sort_coding.active, .sort_coding:hover{
+    color: var(--white);
+    background-color: var(--color_coding);
+    fill: var(--white);
+}
+.sort_mechanical {
+    border: 2px solid var(--color_mechanical);
+    color: var(--color_mechanical);
+    background-color: var(--white);
+    fill: var(--color_mechanical);
+}
+.sort_mechanical.active, .sort_mechanical:hover{
+    color: var(--white);
+    background-color: var(--color_mechanical);
+    fill: var(--white);
+}
+.sort_webdev {
+    border: 2px solid var(--color_webdev);
+    color: var(--color_webdev);
+    background-color: var(--white);
+    fill: var(--color_webdev);
+}
+.sort_webdev.active, .sort_webdev:hover{
+    color: var(--white);
+    background-color: var(--color_webdev);
+    fill: var(--white);
+}
+.sort_music {
+    border: 2px solid var(--color_music);
+    color: var(--color_music);
+    background-color: var(--white);
+    fill: var(--color_music);
+}
+.sort_music.active, .sort_music:hover{
+    color: var(--white);
+    background-color: var(--color_music);
+    fill: var(--white);
+}
+
+/* sport by select element */
+.sort {
+    float: right;
+}
+
+.sort label {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--m-color);
+}
+
+#mySort {
+    border-radius: 4px;
+    border: 2px solid black;
+    display: inline;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4em 3.5em 0.4em 0.5em;
+    margin-right: 1.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    background-position: right 1em top 50%;
+    background-size: .65em auto;
+}
+
+/* mobile jazz */
+@media screen and (max-width: 1010px) {
+    .sort label {
+        display: none;
+    }
+    .sort {
+        margin-top: 0.5em;
+        display: block;
+        clear: both;
+        float: left;
+    }
+}
