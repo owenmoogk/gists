@@ -1,4 +1,4 @@
-function loadXML() {
+function loadProjects() {
     // make new http request, its a js thing
     var xmlhttp = new XMLHttpRequest();
 
