@@ -1,0 +1,7 @@
+Money
+
+Weapons
+
+Food/health
+
+Armor
