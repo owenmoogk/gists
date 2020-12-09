@@ -1,0 +1,14 @@
+#stl_cont{
+    display: flex;
+
+}
+
+#loading{
+    text-align: center;
+    margin-left: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+p#loading{
+    font-size: 30px;
+}

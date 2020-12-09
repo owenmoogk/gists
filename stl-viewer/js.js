@@ -15,7 +15,9 @@ function loadSTL(){
         // animate with rotating
         // msec is speed
         stl_viewer.animate_model(0, {delta:{rotationz:1.2, msec:1500, loop:true}} );
-    }, 1000);
+
+    // timeout 1000ms
+    }, 950);
 }
 
 // pausing the rotation

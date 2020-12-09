@@ -3,15 +3,13 @@
     <head>
         <title>STL Testing</title>
         <script src="js.js"></script>
+        <link rel="stylesheet" href="css.css">
     </head>
-    <body>
+    <body onload="loadSTL()">
         <script src="/stlplugin/stl_viewer.min.js"></script>
         <div id="stl_cont" style="height: 500px;">
-            <p id="loading">Loading...</p>
+            <div id="loading"><p id="loading">Loading...</p></div>
         </div>
-        <script>
-            loadSTL()
-        </script>
         <button onclick="togglePause()">Pause/play</button>
     </body>
 </html>
