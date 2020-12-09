@@ -2,14 +2,15 @@
 <html>
     <head>
         <title>STL Testing</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js.js"></script>
         <link rel="stylesheet" href="css.css">
     </head>
     <body onload="loadSTL()">
         <script src="/stlplugin/stl_viewer.min.js"></script>
-        <div id="stl_cont" style="height: 500px;">
+        <div id="stl_cont" onmouseover="play()" onmouseout="pause()">
             <div id="loading"><p id="loading">Loading...</p></div>
         </div>
-        <button onclick="togglePause()">Pause/play</button>
+        <button onclick="constantPlay()">Toggle constant rotation</button>
     </body>
 </html>

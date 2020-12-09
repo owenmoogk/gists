@@ -12,24 +12,29 @@ function loadSTL(){
         // rotate to make it normal
         stl_viewer.rotate(0, -1.5, 0, 0);
 
-        // animate with rotating
-        // msec is speed
-        stl_viewer.animate_model(0, {delta:{rotationz:1.2, msec:1500, loop:true}} );
-
     // timeout 1000ms
     }, 950);
 }
 
-// pausing the rotation
-function togglePause(){
-    if (pause == false){
-        stl_viewer.animate_model(0, {delta:{rotationz:0, msec:1500, loop:true}} );
-        pause = true
+function constantPlay(){
+    if (constantRotate == false){
+        constantRotate = true
+        play()
     }
     else{
-        stl_viewer.animate_model(0, {delta:{rotationz:1.2, msec:1500, loop:true}} );
-        pause = false
+        constantRotate = false
+        pause()
     }
 }
 
-var pause = false
+function pause(){
+    if (constantRotate == false){
+        stl_viewer.animate_model(0, {delta:{rotationz:0, msec:1500, loop:true}} );
+    }
+}
+
+function play(){
+    stl_viewer.animate_model(0, {delta:{rotationz:1.2, msec:1500, loop:true}} );
+}
+
+var constantRotate = false
