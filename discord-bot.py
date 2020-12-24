@@ -53,4 +53,4 @@ async def on_message(message):
             await message.channel.send('just dont steal my girl')
 
 # client key
-client.run('NzkxNTMxNzUyNjg5NjMxMjgz.X-QhYw.fo2y4v_z1mUTTw9tdJxUjuUQhiw')
+client.run('NzkxNTMxNzUyNjg5NjMxMjgz.X-QhYw.o8MF9nJMmUXmQ9G0XrLnBqGFC24')
