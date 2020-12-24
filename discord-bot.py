@@ -1,6 +1,15 @@
 import discord
+import random
 
 client = discord.Client()
+
+# compliment stuff
+
+firstA =["lazy", "stupid","insecure", "idiotic", "slimy", "slutty", "smelly", "pompous", "communist", "dicknose", "pie-eating", "racist", "elitist", "white trash", "drug-loving", "butterface", "tone deaf", "ugly", "creepy"]
+
+secondA =["douche", "ass", "turd", "rectum", "butt", "cock", "shit", "crotch", "bitch", "turd", "prick", "slut", "taint", "fuck", "dick", "boner", "shart", "nut", "sphincter"]
+
+thirdA =["pilot", "canoe", "captian", "pirate", "hammer", "knob", "box", "jockey", "nazi", "waffle", "goblin", "blossom", "biscuit", "clown", "socket", "monster", "hound", "dragon", "balloon"]
 
 @client.event
 async def on_ready():
@@ -47,10 +56,17 @@ async def on_message(message):
             for i in range(1,30):
                 await message.channel.send(":heart:")
             await message.channel.send('im just in love :smiling_face_with_3_hearts:')
+        
+        elif message.content.startswith('compliment'):
+            number1 = random.randint(0,len(firstA)-1)
+            number2 = random.randint(0,len(secondA)-1)
+            number3 = random.randint(0,len(thirdA)-1)
+            text = "You are a "+firstA[number1]+' '+secondA[number2]+' '+thirdA[number3]
+            await message.channel.send(text)
 
         elif message.content.startswith(''):
             await message.channel.send('oh wow cool')
             await message.channel.send('just dont steal my girl')
 
 # client key
-client.run('NzkxNTMxNzUyNjg5NjMxMjgz.X-QhYw.o8MF9nJMmUXmQ9G0XrLnBqGFC24')
+client.run('NzkxNTMxNzUyNjg5NjMxMjgz.X-QhYw.WcMUy1aR-JXjsV9lPYst_hXFTXI')
