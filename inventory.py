@@ -1,10 +1,11 @@
 from colorama import Fore, Back, Style
+from pathlib import Path
+import pickle
+# setting root = to current folder
+root = Path(".")
+inventoryData = root / "data"/"inventory.dat"
 
-inventory = {
-    "brand": "Ford",
-    "model": "Mustang",
-    "year": 1964
-}
+inventory = pickle.load(open(inventoryData, "rb"))
 
 def showInventory():
     invKeys = []
@@ -13,7 +14,9 @@ def showInventory():
     print ()
     for i in invKeys:
         print (Fore.RED+i+':',inventory[i])
-    print (Fore.WHITE)def addToInv(item, number):
+    print (Fore.WHITE)
+
+def addToInv(item, number):
     if item in inventory:
         inventory[item] += number
         print("+"+str(number),item)
