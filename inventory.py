@@ -13,4 +13,11 @@ def showInventory():
     print ()
     for i in invKeys:
         print (Fore.RED+i+':',inventory[i])
-    print (Fore.WHITE)
+    print (Fore.WHITE)def addToInv(item, number):
+    if item in inventory:
+        inventory[item] += number
+        print("+"+str(number),item)
+    else:
+        inventory[item] = number
+        print("+"+str(number),item)
+    pickle.dump(inventory, open(inventoryData, "wb"))
