@@ -1,4 +1,5 @@
 import discord
+import key
 import random
 
 client = discord.Client()
@@ -69,4 +70,5 @@ async def on_message(message):
             await message.channel.send('just dont steal my girl')
 
 # client key
-client.run('NzkxNTMxNzUyNjg5NjMxMjgz.X-QhYw.WcMUy1aR-JXjsV9lPYst_hXFTXI')
+myKey = key.getKey()
+client.run(myKey)
