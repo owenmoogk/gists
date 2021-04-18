@@ -22,8 +22,8 @@ font = pygame.font.SysFont("comicsans", 50)
 gridSize = 16
 gameSpeed = 30
 gridDimensions = WIDTH // gridSize
-blinkTime = 0.5
 milliseconds = int(round(time.time() * 1000))
+period = 1
 
 class Firefly():
     def __init__(self, row, col):
@@ -31,21 +31,23 @@ class Firefly():
         self.col = col
         self.x = row * gridSize
         self.y = col * gridSize
-        self.period = random.uniform(1.5,2)
+        self.period = period
         self.active = False
-        self.countdown = random.uniform(0,self.period)
+        self.countdown = random.uniform(0,2)
         self.lastUpdateTime = milliseconds
 
     def update(self):
         self.countdown -= (milliseconds - self.lastUpdateTime)/1000
         self.lastUpdateTime = milliseconds
-        if self.countdown <= 0:
-            if self.active:
+        if self.active:
+            if self.countdown < period - 0.2:
                 self.active = False
-                self.countdown = self.period
-            else:
-                self.active = True
-                self.countdown = blinkTime
+        if self.countdown <= 0:
+            self.active = True
+            self.countdown = period
+
+    def neighborUpdate(self):
+        self.countdown -= 0.05
 
 def drawGrid():
     for i in range(gridDimensions):
@@ -85,9 +87,18 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
             
-        for row in grid:
-            for firefly in row:
+        for rowIndex, row in enumerate(grid):
+            for index, firefly in enumerate(row):
+                activity = firefly.active
                 firefly.update()
+                if firefly.active != activity:
+                    try:
+                        row[index + 1].neighborUpdate()
+                        row[index - 1].neighborUpdate()
+                        grid[rowIndex + 1][index].neighborUpdate()
+                        grid[rowIndex - 1][index].neighborUpdate()
+                    except Exception as e:
+                        pass
 
         drawScreen(grid)
 
