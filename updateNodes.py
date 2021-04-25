@@ -8,7 +8,7 @@ def update(mass1, masses):
 			continue
 
 		deltaY = mass1.y - mass2.y
-		deltaX = mass1.x - mass2.x
+		deltaX = mass2.x - mass1.x
 
 		# distance between two masses
 		distance = math.sqrt(deltaY**2 + deltaX**2)
@@ -19,8 +19,9 @@ def update(mass1, masses):
 		# now have to split up into vectors
 		# step 1, find angle
 		angle = math.atan2(deltaX, deltaY)
+		angle = math.radians(math.degrees(angle) - 90)
 		print("Distance: ", distance, "Angle: ", math.degrees(angle))
 
 		# now split into vectors for each, and add to current accel
 		mass1.xAccel += gravitationalAcceleration * math.cos(angle)
-		mass1.yAccel -= gravitationalAcceleration * math.sin(angle)
+		mass1.yAccel += gravitationalAcceleration * math.sin(angle)
