@@ -13,8 +13,22 @@ def update(mass1, masses):
 		# distance between two masses
 		distance = math.sqrt(deltaY**2 + deltaX**2)
 
+		if distance <= 2:
+			# collided
+			totalMass = mass1.mass + mass2.mass
+			mass1.xVel = (mass1.xVel*mass1.mass + mass2.xVel*mass2.mass) / (totalMass)
+			mass1.yVel = (mass1.yVel*mass1.mass + mass2.yVel*mass2.mass) / (totalMass)
+			mass1.mass += mass2.mass
+
+			masses.remove(mass2)
+
+
 		# force between two objects, acceleration adjusts depending on masses and then needs to be seperated by vectors
 		gravitationalAcceleration = gravitationalConstant * mass2.mass * mass1.mass / distance**2
+
+		totalMass = mass1.mass + mass2.mass
+		movementRatio = mass2.mass / totalMass
+		gravitationalAcceleration *= movementRatio
 
 		# now have to split up into vectors
 		# step 1, find angle
