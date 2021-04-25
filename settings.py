@@ -8,10 +8,11 @@ screen = pygame.display.set_mode((windowWidth, windowHeight))
 pygame.display.set_caption("Gravity Simulation")
 
 # SETTINGS
-simSpeed = 30 # 60 ticks / frames per second
-numOfMasses = 2
-
-gravitationalConstant = 100
+simSpeed = 60 # 60 ticks / frames per second
+numOfMasses = 20
+dampening = 0.98
+gravitationalConstant = 30
+maxSpeed = 50 # pixels per second
 
 # COLORS
 white = (255,255,255)

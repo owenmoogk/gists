@@ -6,6 +6,7 @@ from drawScreen import *
 from updateNodes import *
 
 masses = []
+masses.append(StationaryMass())
 
 for i in range(numOfMasses):
 	masses.append(Mass())
