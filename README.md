@@ -1,2 +1,2 @@
 # gravity-simulator
-Simulation of gravity using. Still working out the physics
+Simulation of gravity using pygame. Still working out the physics
