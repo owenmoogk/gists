@@ -6,10 +6,6 @@ target = 'C:\\Users\\owenm\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Pr
 
 shutil.copyfile(original, target)
 
-
-def write_slogan():
-   print("Tkinter is easy to use!")
-
 root = tk.Tk()
 root.geometry('500x200')
 root.title('Sticky Caps Installer')
