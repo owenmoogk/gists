@@ -1,5 +1,15 @@
 import shutil
 import tkinter as tk
+import sys
+import subprocess
+
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'keyboard'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'pynput'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'pyautogui'])
 
 original = 'sticky-caps.py'
 target = 'C:\\Users\\owenm\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\sticky-caps.pyw'
