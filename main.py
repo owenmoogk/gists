@@ -1,12 +1,17 @@
 # INIT
-import pygame, random, time, math
+import pygame
 from Mass import *
 from settings import *
-from drawScreen import *
 from updateNodes import *
 
 masses = []
 masses.append(StationaryMass())
+
+def drawWindow(masses):
+	screen.fill(backgroundColor)
+	for mass in masses:
+		mass.draw()
+	pygame.display.update()
 
 for i in range(numOfMasses):
 	masses.append(Mass())
