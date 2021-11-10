@@ -1,4 +1,0 @@
-upgrades:
-    lasar
-    powerups with multiple spaceships / lasar beam
-    civilians
