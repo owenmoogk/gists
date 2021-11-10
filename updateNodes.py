@@ -13,7 +13,7 @@ def update(mass1, masses):
 		# distance between two masses
 		distance = math.sqrt(deltaY**2 + deltaX**2)
 
-		if distance <= 2:
+		if distance <= 1:
 			# collided
 			totalMass = mass1.mass + mass2.mass
 			mass1.xVel = (mass1.xVel*mass1.mass + mass2.xVel*mass2.mass) / (totalMass)
@@ -26,6 +26,9 @@ def update(mass1, masses):
 		# force between two objects, acceleration adjusts depending on masses and then needs to be seperated by vectors
 		gravitationalAcceleration = gravitationalConstant * mass2.mass * mass1.mass / distance**2
 
+		if gravitationalAcceleration > 0.5:
+			gravitationalAcceleration = 0.5
+
 		totalMass = mass1.mass + mass2.mass
 		movementRatio = mass2.mass / totalMass
 		gravitationalAcceleration *= movementRatio
@@ -34,7 +37,7 @@ def update(mass1, masses):
 		# step 1, find angle
 		angle = math.atan2(deltaX, deltaY)
 		angle = math.radians(math.degrees(angle) - 90)
-		print("Distance: ", distance, "Angle: ", math.degrees(angle))
+		# print("Distance: ", distance, "Angle: ", math.degrees(angle))
 
 		# now split into vectors for each, and add to current accel
 		mass1.xAccel += gravitationalAcceleration * math.cos(angle)
