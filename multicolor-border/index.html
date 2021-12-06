@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fancy-border {
+            width: 300px;
+            height: 80px;
+            border: solid 4px transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(white, white), linear-gradient(45deg, #f00, #3020ff);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+
+        .fancy-border3 {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            border: 5px solid;
+            border-image: linear-gradient(45deg, red 30%, yellow 40%, yellow 60%, teal 70%) 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fancy-border">
+        my content
+    </div>
+    <div class="fancy-border3">
+        my content
+    </div>
+</body>
+
+</html>
