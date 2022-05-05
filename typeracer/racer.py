@@ -7,11 +7,14 @@ from pynput.keyboard import Key, Controller
 
 filename = 'race.png'
 
+pytesseract.pytesseract.tesseract_cmd = "C:\Program Files\Tesseract-OCR/tesseract.exe"
+
+
 time.sleep(2)
 
 # distance from left, distance from top
 # 150% zoom, scroll to bottom, 24inch monitor
-img = ImageGrab.grab(bbox=(300,600,1550,900))
+img = ImageGrab.grab(bbox=(300,550,1550,900))
 
 img.save(filename)
 
@@ -44,7 +47,7 @@ for letterIndex in range(0, len(text) - 1):
 
 # keypresses
 keyboard = Controller()
-for i in range(5):
+for i in range(50):
 	for letterIndex in range(0, len(newText)):
 		letter = newText[letterIndex]
 		if letter == '\n':
