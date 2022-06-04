@@ -23,5 +23,5 @@ for i in range(trials):
 
 print (austinLikesCoins)
 
-plt.plot([0,1,2,3,4], list(austinLikesCoins.values()))
+plt.bar([0,1,2,3,4], list(austinLikesCoins.values()))
 plt.show()
