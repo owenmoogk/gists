@@ -25,5 +25,5 @@ for i in range(2,13):
 for i in range(2,13):
   austinLikesCoins[i] = austinLikesCoins[i] / sum
 
-plt.plot(range(2,13), list(austinLikesCoins.values()))
+plt.bar(range(2,13), list(austinLikesCoins.values()))
 plt.show()
