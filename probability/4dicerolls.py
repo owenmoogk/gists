@@ -21,7 +21,12 @@ for i in range(trials):
 
   austinLikesCoins[counter] += 1
 
-print (austinLikesCoins)
+sum = 0
+for i in range(5):
+  sum += austinLikesCoins[i]
+for i in range(5):
+  austinLikesCoins[i] = austinLikesCoins[i] / sum
+print( austinLikesCoins)
 
-plt.bar([0,1,2,3,4], list(austinLikesCoins.values()))
-plt.show()
+# plt.bar([0,1,2,3,4], list(austinLikesCoins.values()))
+# plt.show()
