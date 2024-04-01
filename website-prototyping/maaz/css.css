@@ -1,0 +1,38 @@
+.heading{
+  background-color: pink;
+}
+
+#maazHeading{
+  border: 5px solid purple;
+}
+
+.container{
+  height: 500px;
+  width: 800px;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.element{
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  margin: 10px;
+}
+
+/* tags  => h1, body, p,  */
+
+/* classes => .className */
+
+/* id => #idName */
+
+div.link{
+  color: black;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+div.link :hover{
+  color: red;
+}
