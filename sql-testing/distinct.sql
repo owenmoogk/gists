@@ -1,0 +1,1 @@
+select distinct CustomerName as [Customer Name] from kcc.dbo.customers
